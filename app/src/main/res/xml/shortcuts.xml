@@ -1,0 +1,14 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="quick_convert"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_convert"
+        android:shortcutShortLabel="@string/shortcut_convert_short"
+        android:shortcutLongLabel="@string/shortcut_convert_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.pinyinmate.app"
+            android:targetClass="com.pinyinmate.app.MainActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

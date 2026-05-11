@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PinyinMate</string>
+    <string name="shortcut_convert_short">转换</string>
+    <string name="shortcut_convert_long">快速转换拼音</string>
+</resources>
