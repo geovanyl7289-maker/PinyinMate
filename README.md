@@ -1,40 +1,79 @@
-# PinyinMate
+<p align="center">
+  <img src="app/src/main/res/drawable/ic_launcher.png" width="112" alt="PinyinMate Logo" />
+</p>
+
+<h1 align="center">PinyinMate</h1>
+
+<p align="center">
+  一款干净、轻量、类 iOS / macOS 风格的 Android 中文转拼音工具。
+</p>
+
+<p align="center">
+  <img alt="Android" src="https://img.shields.io/badge/Android-Native-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+  <img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-2.0.21-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" />
+  <img alt="Jetpack Compose" src="https://img.shields.io/badge/Jetpack%20Compose-Material%203-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.10-10B981?style=for-the-badge" />
+</p>
+
+---
+
+## 简介
 
 PinyinMate 是一款原生 Android 中文转拼音工具，使用 Kotlin 与 Jetpack Compose 构建。它专注于把中文内容快速转换为拼音，并提供复制、转发、收藏、历史记录、格式模板、桌面小组件快捷转换等实用功能。
 
-界面采用接近 iOS / macOS 的极简风格：大量留白、大圆角卡片、柔和阴影、毛玻璃质感、浅色与深色模式适配，以及轻量的启动和页面切换动画。应用的目标是保持简单、干净、顺手，不把常用转换流程做复杂。
+它的目标不是把简单工具做复杂，而是把常用转换流程做得更顺手：打开、输入、转换、复制，一气呵成。所有转换均在本地完成，不上传用户文本内容。
 
-## 功能
+## 亮点
 
-- 中文转拼音，支持声调、数字声调、无声调输出
-- 支持小写、大写、首字母大写等格式
-- 提供多种复制模板：纯拼音、中文加拼音、逐行、表格、首字母
-- 支持一键复制、系统转发、收藏与历史记录
-- 历史记录支持确认删除和清空确认，减少误操作
-- 桌面小组件支持剪贴板快捷转换入口
-- 支持浅色、深色、跟随系统主题
-- 所有转换在本地完成，不上传文本内容
+- **本地离线转换**：中文文本直接在设备端转换，保护隐私
+- **多种输出格式**：支持声调、数字声调、无声调、小写、大写、首字母大写
+- **复制格式模板**：支持纯拼音、中文加拼音、逐行、表格、首字母
+- **历史与收藏**：常用结果可收藏，历史记录支持确认删除与清空确认
+- **快捷分享**：一键复制或调用系统分享
+- **桌面小组件**：复制中文后点击小组件，可快速进入转换
+- **深浅色模式**：支持浅色、深色、跟随系统
+- **启动动画**：加入品牌启动动画，打开应用更有完整感
 
-## 界面
+## 界面风格
 
-- 类苹果风格的极简视觉
+PinyinMate 采用接近 iOS / macOS 的极简视觉语言：
+
+- 大量留白
+- 大圆角玻璃卡片
+- 柔和阴影
 - 悬浮胶囊底部导航栏
-- 适配 Android 手势导航区域
-- 大圆角玻璃卡片与柔和阴影
-- 品牌启动动画与页面过渡动画
+- Android 手势导航区域适配
+- 平滑页面切换动画
 
-## English
+## 技术栈
 
-PinyinMate is a native Android pinyin conversion app built with Kotlin and Jetpack Compose.
-
-### Design
-
-- Apple-inspired macOS / iOS minimal interface
-- Large rounded cards, soft shadows, glass-like translucent surfaces
-- SF Pro first font stack through Android's system sans fallback
-- Automatic light and dark mode
-- Smooth animated input and result transitions
+- Kotlin
+- Jetpack Compose
+- Material 3
+- AndroidX
+- ICU Transliterator
+- Gradle / Android Gradle Plugin
 
 ## 构建
 
-Open this folder in Android Studio and run `app`.
+使用 Android Studio 打开项目根目录，然后运行 `app`。
+
+也可以使用命令行构建：
+
+```powershell
+gradle assembleDebug
+```
+
+生成的 debug APK 位于：
+
+```text
+app/build/outputs/apk/debug/app-debug.apk
+```
+
+## English
+
+PinyinMate is a native Android pinyin conversion app built with Kotlin and Jetpack Compose. It provides fast local Chinese-to-pinyin conversion with copy templates, history, favorites, sharing, dark mode, a home-screen widget shortcut, and an Apple-inspired minimal interface.
+
+## License
+
+This project is currently published as source code for learning and personal project demonstration.
